@@ -1,3 +1,51 @@
+# Projet Gestion
+
+Application Laravel pour la gestion.
+
+## Installation rapide
+
+### 1. Créer la base de données MySQL
+```bash
+mysql -u root -p -e "CREATE DATABASE gestion CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+```
+
+### 2. Configuration automatique
+```bash
+composer setup
+```
+
+### 3. Lancer l'application
+```bash
+php artisan serve
+```
+
+## Erreur 500 ?
+
+Si vous obtenez une erreur 500, suivez ces étapes:
+
+1. **Vérifier la configuration**:
+   ```bash
+   php check-config.php
+   ```
+
+2. **Créer la base de données** (si pas encore fait):
+   ```bash
+   mysql -u root -p -e "CREATE DATABASE gestion;"
+   ```
+
+3. **Exécuter les migrations**:
+   ```bash
+   php artisan migrate
+   ```
+
+4. **Vérifier le fichier .env**:
+   - Assurez-vous que `DB_DATABASE=gestion`
+   - Vérifiez `DB_USERNAME` et `DB_PASSWORD`
+
+📖 Pour plus de détails, consultez [INSTALLATION.md](./INSTALLATION.md)
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
